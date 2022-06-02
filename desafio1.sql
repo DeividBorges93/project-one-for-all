@@ -55,3 +55,10 @@ CREATE TABLE SpotifyClone.seguindo_artista(
   PRIMARY KEY(usuario_id, artista_id)
 );
 
+INSERT INTO SpotifyClone.planos(tipo_plano, valor_plano)
+VALUES
+  ('gratuito', 0),
+  ('familiar', 7.99),
+  ('universitario', 5.99),
+  ('pessoal', 6.99);
+
