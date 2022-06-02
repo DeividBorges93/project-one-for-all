@@ -75,3 +75,12 @@ VALUES
   ('Angelina', 42, 2, '2018-04-29'),
   ('Paul', 46, 2, '2017-01-17');
 
+INSERT INTO SpotifyClone.artistas(nome)
+VALUES
+  ('Walter Phoenix'),
+  ('Peter Strong'),
+  ('Lance Day'),
+  ('Freedie Shannon'),
+  ('Tyler Isle'),
+  ('Fog');
+
