@@ -38,3 +38,12 @@ CREATE TABLE SpotifyClone.cancoes(
   FOREIGN KEY (album_id) REFERENCES SpotifyClone.albuns(id)
 );
 
+CREATE TABLE SpotifyClone.historico_reproducoes(
+  usuario_id INT NOT NULL,
+  cancao_id INT NOT NULL,
+  data_reproducao DATETIME,
+  FOREIGN KEY (usuario_id) REFERENCES SpotifyClone.usuarios(id),
+  FOREIGN KEY (cancao_id) REFERENCES SpotifyClone.cancoes(id),
+  PRIMARY KEY(usuario_id, cancao_id)
+);
+
