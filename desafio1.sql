@@ -16,3 +16,9 @@ CREATE TABLE SpotifyClone.usuarios(
   data_assinatura DATETIME,
   FOREIGN KEY (id_plano) REFERENCES SpotifyClone.planos(id)
   );
+
+CREATE TABLE SpotifyClone.artistas(
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  nome VARCHAR(25) NOT NULL
+);
+
