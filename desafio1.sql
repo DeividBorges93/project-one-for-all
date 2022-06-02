@@ -47,3 +47,11 @@ CREATE TABLE SpotifyClone.historico_reproducoes(
   PRIMARY KEY(usuario_id, cancao_id)
 );
 
+CREATE TABLE SpotifyClone.seguindo_artista(
+  usuario_id INT NOT NULL,
+  artista_id INT NOT NULL,
+  FOREIGN KEY (usuario_id) REFERENCES SpotifyClone.usuarios(id),
+  FOREIGN KEY (artista_id) REFERENCES SpotifyClone.artistas(id),
+  PRIMARY KEY(usuario_id, artista_id)
+);
+
